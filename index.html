@@ -357,7 +357,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
 <div class="toast" id="toast"></div>
 
 <script>
-const API = 'http://localhost:3000';
+const API = 'https://cryptosim-production.up.railway.app';
 async function apiFetch(path, opts={}) {
   const res = await fetch(API + path, { headers:{'Content-Type':'application/json'}, ...opts });
   const json = await res.json();
